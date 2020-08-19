@@ -1,0 +1,64 @@
+DRAGAN SILVIA 311CB
+
+MAIN TASKS
+
+Am scris functii pentru rezolvarea task urilor 1 si 5 intrucat aveam nevoie de apelul acestora in rezolvarea altor task uri.
+Am definit functia baza2 pentru a transforma un numar zecimal in binar.
+
+TASK 0
+
+Se citesc de la tastatura numarul de seturi de date, apoi setul curent. Se afiseaza IP_1 si MSK_2 in formatul cerut.
+
+TASK 1
+
+Voi construi forma zecimala a unei masti primite de functie in vectorul "mascazec". Determin catul si restul impartirii numarului natural primit prin variabila "masca". Completez elementele vectorului pana la c cu 255, numarul maxim, apoi completam cu r biti de 1, apoi bitii ramasi vor fi 0.
+
+TASK 2
+
+Afisez in baza 8 si baza 16 fara a face conversia explicita, ci ma folosesc de facilitatile oferite de printf- %o pentru conversie in baza8, respectiv %X pentru hexa.
+
+TASK 3
+
+Afisez adresa de retea a adresei IP_1, ce se obtine prin operatia si logic(&) intre IP_1 SI MSK_2 scrisa in format zecimal.
+
+TASK 4
+
+Afisez adresa de broadcast a adresei IP_1, ce se obtine prin operatia sau logic(|) intre IP_1 SI complementul mastii MSK_2 scrisa in format zecimal.
+
+TASK 5
+
+Verificam octet cu octet daca adresele de retea ale celor doua adrese IP (calculate prin si logic cu o masca de retea) coincid. 
+
+TASK 6
+
+Construiesc in variabila masca1 o varianta a lui MSK1 fara separatori intre octecti.
+
+masca1=( (unsigned int)(MSK_1[0]<<24) | (unsigned int)(MSK_1[1]<<16) | (unsigned int)(MSK_1[2]<<8) | (unsigned int)MSK_1[3] );
+
+
+Pentru a verifica daca exista alternanta 0/1, verificam daca valoarea bitilor mastii pana la intalnirea primului bit 0. Retinem pozitia ultimului bit 1 in variabila msb. Parcurgem in continuare, rezultatul fiind negativ daca intalnim un bit setat pe 1, afirmativ altfel.
+
+TASK 7
+
+Cu ajutorul variabilei msb determinam numarul de biti de 1 pana la intalnirea primului 0. Construim c(catul impartirii lui msb la 8) octeti de valoare maxima, 255, apoi completam cu r biti de 1, apoi bitii ramasi vor fi 0.
+
+TASK 8
+
+Transformam fiecare element al vectorului IP_1 in binar folosind functia mai sus definita, baza2. Pentru ultimul element, nu afisam un punct final
+
+TASK 9
+
+Transformam masca adresei in zecimal cu ajutorul functiei task1, apoi verificam cu ajutorul functiei task5 daca adresa IP_2 apartine fiecarei adrese.
+
+
+
+
+
+
+
+
+
+
+
+
+
